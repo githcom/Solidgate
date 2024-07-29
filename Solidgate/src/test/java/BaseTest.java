@@ -19,11 +19,11 @@ import static java.lang.String.format;
 public class BaseTest {
 
     protected static TestConfig config;
+    protected static String PAYMENT_PAGE_URL;
     protected PaymentPage paymentPage;
     protected StatusRequests statusRequests;
     protected StatusUtils statusUtils;
     protected DetailsRequests detailsRequests;
-    protected static String PAYMENT_PAGE_URL;
 
     @BeforeAll
     static void setup() {

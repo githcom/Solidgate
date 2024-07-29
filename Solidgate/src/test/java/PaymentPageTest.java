@@ -34,7 +34,6 @@ public class PaymentPageTest extends BaseTest {
         expectedCurrency = appleWallet.getCurrency();
 
         paymentPage.switchToEnglish();
-
         paymentPage.setCardNumber(cardNumber);
         paymentPage.setCardExpiryDate(expiryDate);
         paymentPage.setCvv2(cvv2);

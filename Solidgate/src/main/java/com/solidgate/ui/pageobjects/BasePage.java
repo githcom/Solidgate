@@ -17,7 +17,7 @@ public abstract class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new Wait(driver, Duration.ofSeconds(getTimeoutSeconds()));
-        PageFactory.initElements(new AjaxSingleElementLocatorFactory(driver, TIMEOUT_SECONDS), this);
+        PageFactory.initElements(new AjaxSingleElementLocatorFactory(driver, getTimeoutSeconds()), this);
     }
 
     public void navigateTo(String url) {

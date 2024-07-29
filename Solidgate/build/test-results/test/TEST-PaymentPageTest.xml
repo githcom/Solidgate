@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PaymentPageTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2024-07-29T22:48:11" hostname="Andrews-MacBook-Pro.local" time="0.079">
+  <properties/>
+  <testcase name="verifySuccessStatusOrderTest()" classname="PaymentPageTest" time="0.069">
+    <failure message="org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: /PATH_TO_YOUR/chromedriver&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/&#10;Build info: version: '4.23.0', revision: '4df0a231af'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.2'&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.NoSuchDriverException">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: /PATH_TO_YOUR/chromedriver
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.2'
+Driver info: driver.version: ChromeDriver
+	at app//org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	at app//org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at app//org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:62)
+	at app//com.solidgate.ui.selenium.DriverManager.createLocalDriver(DriverManager.java:52)
+	at app//com.solidgate.ui.selenium.DriverManager.createDriver(DriverManager.java:42)
+	at app//com.solidgate.ui.selenium.DriverManager.getDriver(DriverManager.java:35)
+	at app//BaseTest.prepare(BaseTest.java:40)
+	at java.base@16.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base@16.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@16.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because the return value of &quot;java.lang.ThreadLocal.get()&quot; is null
+		at com.solidgate.ui.selenium.DriverManager.closeDriver(DriverManager.java:61)
+		at BaseTest.close(BaseTest.java:48)
+		... 3 more
+Caused by: java.lang.IllegalStateException: chromedriver must exist: /PATH_TO_YOUR/chromedriver
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:478)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
+	... 12 more
+</failure>
+  </testcase>
+  <testcase name="verifyOrderAmountTest()" classname="PaymentPageTest" time="0.004">
+    <failure message="org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: /PATH_TO_YOUR/chromedriver&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/&#10;Build info: version: '4.23.0', revision: '4df0a231af'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.2'&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.NoSuchDriverException">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: /PATH_TO_YOUR/chromedriver
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.2'
+Driver info: driver.version: ChromeDriver
+	at app//org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	at app//org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at app//org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:62)
+	at app//com.solidgate.ui.selenium.DriverManager.createLocalDriver(DriverManager.java:52)
+	at app//com.solidgate.ui.selenium.DriverManager.createDriver(DriverManager.java:42)
+	at app//com.solidgate.ui.selenium.DriverManager.getDriver(DriverManager.java:35)
+	at app//BaseTest.prepare(BaseTest.java:40)
+	at java.base@16.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base@16.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@16.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because the return value of &quot;java.lang.ThreadLocal.get()&quot; is null
+		at com.solidgate.ui.selenium.DriverManager.closeDriver(DriverManager.java:61)
+		at BaseTest.close(BaseTest.java:48)
+		... 3 more
+Caused by: java.lang.IllegalStateException: chromedriver must exist: /PATH_TO_YOUR/chromedriver
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:478)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
+	... 12 more
+</failure>
+  </testcase>
+  <testcase name="verifyOrderCurrencyTest()" classname="PaymentPageTest" time="0.004">
+    <failure message="org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: /PATH_TO_YOUR/chromedriver&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/&#10;Build info: version: '4.23.0', revision: '4df0a231af'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.2'&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.NoSuchDriverException">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: /PATH_TO_YOUR/chromedriver
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.2'
+Driver info: driver.version: ChromeDriver
+	at app//org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
+	at app//org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at app//org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at app//org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:62)
+	at app//com.solidgate.ui.selenium.DriverManager.createLocalDriver(DriverManager.java:52)
+	at app//com.solidgate.ui.selenium.DriverManager.createDriver(DriverManager.java:42)
+	at app//com.solidgate.ui.selenium.DriverManager.getDriver(DriverManager.java:35)
+	at app//BaseTest.prepare(BaseTest.java:40)
+	at java.base@16.0.2/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base@16.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@16.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because the return value of &quot;java.lang.ThreadLocal.get()&quot; is null
+		at com.solidgate.ui.selenium.DriverManager.closeDriver(DriverManager.java:61)
+		at BaseTest.close(BaseTest.java:48)
+		... 3 more
+Caused by: java.lang.IllegalStateException: chromedriver must exist: /PATH_TO_YOUR/chromedriver
+	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:478)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
+	... 12 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

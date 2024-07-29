@@ -15,9 +15,9 @@ import static java.util.Objects.isNull;
 
 public class DriverManager {
 
-    private final PlatformType platformType;
-
     private static final DriverManager INSTANCE = new DriverManager();
+
+    private final PlatformType platformType;
 
     private final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 

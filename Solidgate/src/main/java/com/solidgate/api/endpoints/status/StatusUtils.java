@@ -5,7 +5,7 @@ import static org.awaitility.Awaitility.await;
 
 public class StatusUtils {
 
-    StatusRequests statusRequests;
+    private StatusRequests statusRequests;
 
     public StatusUtils(StatusRequests statusRequests) {
         this.statusRequests = statusRequests;

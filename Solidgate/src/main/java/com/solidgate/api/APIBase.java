@@ -14,7 +14,7 @@ public abstract class APIBase {
     protected static final TestConfig CONFIG = ConfigCache.getOrCreate(TestConfig.class);
     private final String BASE_URI = format("%s%s", CONFIG.hostUrl(), CONFIG.apiPath());
 
-    public RequestSpecBuilder basicRequestSpecBuilder() {
+    protected RequestSpecBuilder basicRequestSpecBuilder() {
         return new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .addFilter(new RequestLoggingFilter())

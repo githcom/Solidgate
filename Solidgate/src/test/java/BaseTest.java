@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static java.lang.String.format;
 
-public class BaseTest {
+public abstract class BaseTest {
 
     protected static TestConfig config;
     protected static String PAYMENT_PAGE_URL;
